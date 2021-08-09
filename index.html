@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+            Password generator
+            <div class="pw">
+                <span id="pw">1823Z3s78#dkl8@</span>
+                <button id="copy">複製密碼</button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="len">密碼長度(8-30)</label>
+                <input type="number" id="len" value="15" min="8" max="30">
+            </div>
+            <div class="form-control">
+                <label for="upper">包含大寫字母</label>
+                <input type="checkbox" id="upper">
+            </div>
+            <div class="form-control">
+                <label for="lower">包含小寫字母</label>
+                <input type="checkbox" id="lower">
+            </div>
+            <div class="form-control">
+                <label for="number">包含數字</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="form-control">
+                <label for="symbol">包含符號</label>
+                <input type="checkbox" id="symbol">
+            </div>
+            <button class="generate" id="generate">
+                Generate password
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
