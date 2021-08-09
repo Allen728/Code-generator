@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:cadetblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.pw-container {
+    background-color:darkslategray;
+    min-width: 400px;
+    box-shadow: 0 4px 10px rgb(56, 55, 55);
+}
+
+.pw-header {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.pw{
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.25rem;
+    font-family: inherit;
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer;
+    /* top: 0; */
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate {
+    background-color:lightgreen;
+    border: none;
+    color:darkslategray;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    cursor: pointer;
+}
